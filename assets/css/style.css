@@ -45,6 +45,11 @@ h1 {
      font-size: 18px;
      font-weight: 500px;
  }
+ .button:hover{
+background-color: #8BC34A;
+color: #fff;
+border: 1px solid #8BC34A;
+ }
  .button-after{
     border: 1px solid #16aabc;
     background-color: #fff;
@@ -68,7 +73,7 @@ h1 {
  .font-normal {
      font-weight: 600;
      font-size: 30px;
-     color: #021315;
+     color: #021315b3;
  }
  ul.form-stepper {
      counter-reset: section;
@@ -80,6 +85,10 @@ h1 {
     box-shadow: 0px 1px 10px #02131561 inset;
 
 border-radius: 20px;
+}
+.form-content::placeholder{
+color: #021315b3;
+font-size: 16px;
 }
  @media (min-width:800px) {
     ul.form-stepper {
@@ -110,21 +119,25 @@ border-radius: 20px;
 .form-check-input {
   
     flex-shrink: 0;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1.8em;
+    height: 1.8em;
 }
 
 .form-check-label{
-    font-size: 18px;
-    font-family: 600;
-    color: #021315;
+    font-size: 22px;
+    font-weight: 600;
+    color: #021315b3;
+}
+.form-check{
+    display: flex;
+    align-items: center;
 }
 input[type='radio']:checked:after {
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 15px;
-    top: 1px;
-    left: -1px;
+    top: 2px;
+    left: -2px;
     position: relative;
     background-color: #75d32d;
     content: '';
@@ -132,10 +145,16 @@ input[type='radio']:checked:after {
     visibility: visible;
     border: 2px solid white;
 }
+input[type=checkbox]{
+   
+    accent-color: #75d32d;
+    color: #90A0A3;
+}
 .form-control {
     display: block;
     width: 100%;
     border: 1px solid #90A0A3;
+    padding: 10px;
 }
 .form-check-emoji{
     display: grid;
