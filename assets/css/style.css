@@ -1,0 +1,329 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+.container{
+    padding: 0px 50px;
+    text-align: left;
+}
+.logo-item{
+    width: 165px;
+    height: 90px;
+   
+}
+h1 {
+     text-align: center;
+ }
+ h2 {
+     margin: 0;
+ }
+ ul{
+    padding-inline-start: 0px;
+ }
+ #multi-step-form-container {
+     margin-top: 3rem;
+ }
+ .text-center {
+     text-align: center;
+ }
+ .mx-auto {
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .pl-0 {
+     padding-left: 0;
+ }
+ .button {
+    padding: 0.7rem 2rem;
+    border: 1px solid #16aabc;
+    background-color: #16aabc;
+     color: #fff;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 18px;
+     font-weight: 500px;
+ }
+ .button-after{
+    border: 1px solid #16aabc;
+    background-color: #fff;
+     color: #16aabc;
+ }
+ .submit-btn {
+    border: 1px solid #8BC34A;
+    background-color: #8BC34A;
+ }
+ .mt-3 {
+     margin-top: 1rem;
+ }
+ .d-none {
+     display: none;
+ }
+ .form-step {
+     border: 1px solid rgba(0, 0, 0, 0.1);
+     border-radius: 20px;
+     padding: 3rem;
+ }
+ .font-normal {
+     font-weight: 600;
+     font-size: 30px;
+     color: #021315;
+ }
+ ul.form-stepper {
+     counter-reset: section;
+     margin-bottom: 3rem;
+  
+}
+.form-content{
+ 
+    box-shadow: 0px 1px 10px #02131561 inset;
+
+border-radius: 20px;
+}
+ @media (min-width:800px) {
+    ul.form-stepper {
+        padding-inline-start: 50px;
+        padding-inline-end: 50px; 
+    }
+    .form-content{
+        width: 80%;
+    margin: auto;
+  
+ }
+ .component-rido{
+    display: grid;
+    grid-template-columns:repeat(3,0.15fr);
+ }
+ .component-emoji{
+    display: flex;
+  
+}
+}
+@media (min-width:500px)and  (max-width:799px) {
+    .component-rido{
+        display: grid;
+        grid-template-columns:repeat(3,0.15fr);
+     }
+
+}
+.form-check-input {
+  
+    flex-shrink: 0;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.form-check-label{
+    font-size: 18px;
+    font-family: 600;
+    color: #021315;
+}
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: 1px;
+    left: -1px;
+    position: relative;
+    background-color: #75d32d;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    border: 1px solid #90A0A3;
+}
+.form-check-emoji{
+    display: grid;
+    text-align: center;
+    margin:0px 20px;
+}
+textarea:focus-visible {
+    outline-offset: 0px;
+    border: 1px solid #90A0A3 !important;
+}
+.component-emoji{
+   
+    margin: 10px;
+}
+ ul.form-stepper .form-stepper-circle {
+     position: relative;
+ }
+ ul.form-stepper .form-stepper-circle span {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateY(-50%) translateX(-50%);
+ }
+ .form-stepper-horizontal {
+     position: relative;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+ }
+ ul.form-stepper > li:not(:last-of-type) {
+     margin-bottom: 0.625rem;
+     -webkit-transition: margin-bottom 0.4s;
+     -o-transition: margin-bottom 0.4s;
+     transition: margin-bottom 0.4s;
+ }
+ .form-stepper-horizontal > li:not(:last-of-type) {
+     margin-bottom: 0 !important;
+ }
+ .form-stepper-horizontal li {
+     position: relative;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+     -webkit-box-align: start;
+     -ms-flex-align: start;
+     align-items: start;
+     -webkit-transition: 0.5s;
+     transition: 0.5s;
+ }
+ .form-stepper-horizontal li:not(:last-child):after {
+     position: relative;
+     -webkit-box-flex: 1;
+     -ms-flex: 1;
+     flex: 1;
+     height: 1px;
+     content: "";
+     top: 32%;
+ }
+ .form-stepper-horizontal li:after {
+     background-color: #dee2e6;
+ }
+ .form-stepper-horizontal li.form-stepper-completed:after {
+     background-color: #6fcc2f;
+ }
+ .form-stepper-horizontal li:last-child {
+     flex: unset;
+ }
+ ul.form-stepper li a .form-stepper-circle {
+     display: inline-block;
+     width: 40px;
+     height: 40px;
+     margin-right: 0;
+     line-height: 1.7rem;
+     text-align: center;
+     background: rgba(0, 0, 0, 0.38);
+     border-radius: 50%;
+ }
+ .form-stepper .form-stepper-active .form-stepper-circle {
+     background-color: #16aabc  !important;
+     color: #fff;
+ }
+ .form-stepper .form-stepper-active .label {
+     color: #16aabc  !important;
+     font-weight: 800;
+ }
+ .form-stepper .form-stepper-active .form-stepper-circle:hover {
+     background-color: #4361ee !important;
+     color: #fff !important;
+ }
+ .form-stepper .form-stepper-unfinished .form-stepper-circle {
+     background-color: #f8f7ff;
+ }
+ .form-stepper .form-stepper-completed .form-stepper-circle {
+     background-color: #6fcc2f  !important;
+     color: #fff;
+ }
+ .form-stepper .form-stepper-completed .label {
+     color: #6fcc2f  !important;
+     font-weight: 800;
+ }
+ .form-stepper .form-stepper-completed .form-stepper-circle:hover {
+     background-color: #0e9594 !important;
+     color: #fff !important;
+ }
+ .form-stepper .form-stepper-active span.text-muted {
+     color: #fff !important;
+ }
+ .form-stepper .form-stepper-completed span.text-muted {
+     color: #fff !important;
+ }
+ .form-stepper .label {
+     font-size: 1rem;
+     margin-top: 0.5rem;
+     color: #292828;
+    font-weight: 600;
+ }
+ .form-stepper a {
+     cursor: default;
+ }
+
+ .rating {
+   
+    border: none;
+  
+  }
+  
+  .rating > label {
+    color: #90a0a3bd;
+
+  }
+  .rating > label:before {
+    margin: 5px;
+    font-size: 2em;
+    font-family: FontAwesome;
+    content: "\f005";
+    display: inline-block;
+  }
+  
+  .rating > input {
+    display: none;
+  }
+  
+  .rating > input:checked ~ label,
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #F79426;
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label,
+  .rating > input:checked ~ label:hover ~ label {
+    color: #FECE31;
+  }
+
+  .radio
+{
+    display: none;
+}
+.emoji
+{
+    font-size: 40px;
+    padding: 5px 5px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 16px;
+}
+#mood-1:checked ~ .emoji-1,
+#mood-2:checked ~ .emoji-2,
+#mood-3:checked ~ .emoji-3,
+#mood-4:checked ~ .emoji-4,
+#mood-5:checked ~ .emoji-5
+{
+    background-color: #4CAF50;
+}
+@media (max-width:550px) {
+    .form-stepper .label {
+        font-size: 0.5rem;
+
+    }
+    .font-normal {
+font-size: 18px;
+
+    }
+}

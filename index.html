@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="keywords" content="تقييم المحطات">
+     <meta name="description" content="تقييم المحطات">
+     <meta name="author" content="hadeer hussein">
+     <meta property="og:title" content=""/>
+     <meta property="og:type" content="Website"/>
+     <meta property="og:url" content="" />
+     <meta property="og:image" content="./assets/img/LOGO.png"/>
+     <link href="assets/img/LOGO.png"  rel="shortcut icon"/>
+     <title>تقييم المحطات</title>
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+     <link href="./assets/font-awesome/css/all.css" rel="stylesheet">
+
+     <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+     <div class="component-content">
+          <div class="container">
+               <a class="navbar-brand" href="#">
+                 <img src="assets/img/LOGO.png"  class="logo-item" alt="Logo">
+               </a>
+          </div>
+          <div id="multi-step-form-container">
+              <!-- Form Steps / Progress Bar -->
+              <ul class="form-stepper form-stepper-horizontal text-center mx-auto pl-0">
+                  <!-- Step 1 -->
+                  <li class="form-stepper-active text-center form-stepper-list" step="1">
+                      <a class="mx-2">
+                          <span class="form-stepper-circle">
+                              <span>1</span>
+                          </span>
+                          <div class="label">السوال الاول</div>
+                      </a>
+                  </li>
+                  <!-- Step 2 -->
+                  <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+                      <a class="mx-2">
+                          <span class="form-stepper-circle text-muted">
+                              <span>2</span>
+                          </span>
+                          <div class="label text-muted">السوال الثانى </div>
+                      </a>
+                  </li>
+                  <!-- Step 3 -->
+                  <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+                      <a class="mx-2">
+                          <span class="form-stepper-circle text-muted">
+                              <span>3</span>
+                          </span>
+                          <div class="label text-muted">السوال الثالث </div>
+                      </a>
+                  </li>
+                   <!-- Step 4 -->
+                   <li class="form-stepper-unfinished text-center form-stepper-list" step="4">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle text-muted">
+                            <span>4</span>
+                        </span>
+                        <div class="label text-muted">السوال الرابع </div>
+                    </a>
+                </li>
+                   <!-- Step 5 -->
+                   <li class="form-stepper-unfinished text-center form-stepper-list" step="5">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle text-muted">
+                            <span>5</span>
+                        </span>
+                        <div class="label text-muted">السوال الخامس </div>
+                    </a>
+                </li>
+                 <!-- Step 6 -->
+                 <li class="form-stepper-unfinished text-center form-stepper-list" step="6">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle text-muted">
+                            <span>6</span>
+                        </span>
+                        <div class="label text-muted"> انتهاء </div>
+                    </a>
+                </li>
+              </ul>
+              <!-- Step Wise Form Content -->
+              <form id="userAccountSetupForm" class="form-content" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
+                  <!-- Step 1 Content -->
+                  <section id="step-1" class="form-step">
+                      <h2 class="font-normal">هل انت راضي عن الخدمة؟</h2>
+                      <!-- Step 1 input fields -->
+                      <div class="mt-3 component-rido">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                             نعم
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                لا
+                            </label>
+                          </div>
+                      </div>
+                      <div class="mt-3">
+                          <button class="button btn-navigate-form-step" type="button" step_number="2">التالى</button>
+                      </div>
+                  </section>
+                  <!-- Step 2 Content, default hidden on page load. -->
+                  <section id="step-2" class="form-step d-none">
+                      <h2 class="font-normal">هل انت راضي عن الخدمة ؟</h2>
+                      <!-- Step 2 input fields -->
+                      <div class="mt-3">
+                        <textarea class="form-control" placeholder="اكتب رسالتك هنا" id="floatingTextarea2" style="height: 100px"></textarea>
+
+                      </div>
+                      <div class="mt-3">
+                          <button class="button btn-navigate-form-step" type="button" step_number="1">السابق</button>
+                          <button class="button btn-navigate-form-step button-after" type="button" step_number="3">التالى</button>
+                      </div>
+                  </section>
+                  <!-- Step 3 Content, default hidden on page load. -->
+                  <section id="step-3" class="form-step d-none">
+                      <h2 class="font-normal">هل انت راضي عن الخدمة ؟</h2>
+                      <!-- Step 3 input fields -->
+                      <div class="mt-3 component-rido">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault">
+                            <label class="form-check-label" for="flexRadioDefault">
+                                غير راضى
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                محايد
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                راضى
+                            </label>
+                          </div>
+                      </div>
+                      <div class="mt-3">
+                          <button class="button btn-navigate-form-step" type="button" step_number="2">السابق</button>
+                          <button class="button btn-navigate-form-step button-after" type="button" step_number="4">التالى</button>
+
+                      </div>
+                  </section>
+                  <!-- Step 4 Content, default hidden on page load. -->
+                  <section id="step-4" class="form-step d-none">
+                    <h2 class="font-normal">هل انت راضي عن الخدمة ؟</h2>
+                    <!-- Step 4 input fields -->
+                    <div class="mt-3">
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label class="star" for="star5" title="Awesome" aria-hidden="true"></label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label class="star" for="star4" title="Great" aria-hidden="true"></label>
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label class="star" for="star3" title="Very good" aria-hidden="true"></label>
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label class="star" for="star2" title="Good" aria-hidden="true"></label>
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label class="star" for="star1" title="Bad" aria-hidden="true"></label>
+                          </div>
+                    </div>
+                    <div class="mt-3">
+                        <button class="button btn-navigate-form-step" type="button" step_number="3">السابق</button>
+                        <button class="button btn-navigate-form-step button-after" type="button" step_number="5">التالى</button>
+
+
+                    </div>
+                </section>
+                 <!-- Step 5 Content, default hidden on page load. -->
+                 <section id="step-5" class="form-step d-none">
+                    <h2 class="font-normal">هل انت راضي عن الخدمة ؟</h2>
+                    <!-- Step 5 input fields -->
+                    <div class="mt-3 component-emoji">
+                        <div class="form-check-emoji">
+                            <input type="radio" id="mood-1" name="mood" value='Worried' class="radio" checked>
+                            <label class="emoji emoji-1" for='mood-1'> 😔</label>
+                            <span>مستاء</span>
+                        </div>
+                        <div class="form-check-emoji">
+                            
+
+                            <input type="radio" id="mood-2" name="mood" value='Sad' class="radio">
+                            <label class="emoji emoji-2" for='mood-2'>😡</label> 
+                            <span>مستاء بشدة</span>
+                        </div> 
+                        <div class="form-check-emoji">   
+
+                            <input type="radio" id="mood-3" name="mood" value='Confused' class="radio">
+                            <label class="emoji emoji-3" for='mood-3'>😟</label> 
+                            <span> محايد</span>
+                        </div> 
+                        <div class="form-check-emoji">  
+
+                            <input type="radio" id="mood-4" name="mood" value='Happy' class="radio">
+                            <label class="emoji emoji-4" for='mood-4'>😊</label>
+                            <span>راضي </span>
+                        </div>  
+                        <div class="form-check-emoji">
+                            <input type="radio" id="mood-5" name="mood" value='Joyful' class="radio">
+                            <label class="emoji emoji-5" for='mood-5'>😂</label> 
+                            <span>   راضي بشدة</span>
+                            
+                        </div> 
+                      
+                    </div>
+                    <div class="mt-3">
+                        <button class="button btn-navigate-form-step" type="button" step_number="4">السابق</button>
+                        <button class="button btn-navigate-form-step button-after" type="button" step_number="6">التالى</button>
+
+                    </div>
+                </section>
+                <!-- Step 5 Content, default hidden on page load. -->
+                <section id="step-6" class="form-step d-none">
+                    
+                    <!-- Step 5 input fields -->
+                    <div class="mt-3">
+                        <h2 class="font-normal">
+                             
+                            شكرا جزيلا لدعمكم
+                            ونأمل مخلصين ان تكون راضيا عن خدماتنا ونامل ان يسعدنا التعامل معك في المستقبل
+                        </h2>
+                    </div>
+                    <div class="mt-3">
+                        <button class="button btn-navigate-form-step" type="button" step_number="1">تقيم جديد</button>
+                        <button class="button submit-btn" type="submit">Save</button>
+
+                    </div>
+                </section>
+              </form>
+          </div>
+     </div> 
+    <script src="./assets/js/style.js"></script>
+</body>
+</html>
