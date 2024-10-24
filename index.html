@@ -20,9 +20,33 @@
 <body>
      <div class="component-content">
           <div class="container">
-               <a class="navbar-brand" href="#">
-                 <img src="assets/img/LOGO.png"  class="logo-item" alt="Logo">
-               </a>
+            <div class="d-flex">
+                <div class="first-div">
+                        <div>
+                            <h4 class="title-componey">شركة ترود لبترول</h4>
+         
+                            <h5 class="title-Branch">محطه طريق الملك سعود</h5>
+                        </div>
+                         
+                   
+                </div>
+                <div>
+                    <h6 class="title-Reviews">تقييم المحطة</h6>
+                </div>
+          
+                  <div class="logo d-flex second-div">
+                    
+                    <a href="" class="link-ar">
+                        <i class="fa-solid fa-globe"></i>
+                        eng
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.jpeg"  class="logo-item" alt="Logo">
+                      </a>
+                  </div>
+                  
+            </div>
+              
           </div>
           <div id="multi-step-form-container">
               <!-- Form Steps / Progress Bar -->
@@ -72,6 +96,7 @@
                         <div class="label text-muted">السوال الخامس </div>
                     </a>
                 </li>
+                
                  <!-- Step 6 -->
                  <li class="form-stepper-unfinished text-center form-stepper-list" step="6">
                     <a class="mx-2">
@@ -81,6 +106,60 @@
                         <div class="label text-muted"> انتهاء </div>
                     </a>
                 </li>
+                 <!-- Step 1 -->
+                 <li class="form-stepper-active text-center form-stepper-list" step="1">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle">
+                            <span>1</span>
+                        </span>
+                        <div class="label">السوال الاول</div>
+                    </a>
+                </li>
+                <!-- Step 2 -->
+                <li class="form-stepper-unfinished text-center form-stepper-list" step="2">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle text-muted">
+                            <span>2</span>
+                        </span>
+                        <div class="label text-muted">السوال الثانى </div>
+                    </a>
+                </li>
+                <!-- Step 3 -->
+                <li class="form-stepper-unfinished text-center form-stepper-list" step="3">
+                    <a class="mx-2">
+                        <span class="form-stepper-circle text-muted">
+                            <span>3</span>
+                        </span>
+                        <div class="label text-muted">السوال الثالث </div>
+                    </a>
+                </li>
+                 <!-- Step 4 -->
+                 <li class="form-stepper-unfinished text-center form-stepper-list" step="4">
+                  <a class="mx-2">
+                      <span class="form-stepper-circle text-muted">
+                          <span>4</span>
+                      </span>
+                      <div class="label text-muted">السوال الرابع </div>
+                  </a>
+              </li>
+                 <!-- Step 5 -->
+                 <li class="form-stepper-unfinished text-center form-stepper-list" step="5">
+                  <a class="mx-2">
+                      <span class="form-stepper-circle text-muted">
+                          <span>5</span>
+                      </span>
+                      <div class="label text-muted">السوال الخامس </div>
+                  </a>
+              </li>
+               <!-- Step 6 -->
+               <li class="form-stepper-unfinished text-center form-stepper-list" step="6">
+                  <a class="mx-2">
+                      <span class="form-stepper-circle text-muted">
+                          <span>6</span>
+                      </span>
+                      <div class="label text-muted"> انتهاء </div>
+                  </a>
+              </li>
               </ul>
               <!-- Step Wise Form Content -->
               <form id="userAccountSetupForm" class="form-content" name="userAccountSetupForm" enctype="multipart/form-data" method="POST">
@@ -229,7 +308,7 @@
                         </h2>
                     </div>
                     <div class="mt-3">
-                        <button class="button btn-navigate-form-step" type="button" step_number="1">تقيم جديد</button>
+                        <button class="button btn-navigate-form-step button-after" type="button" step_number="1">تقيم جديد</button>
                         <button class="button submit-btn" type="submit">Save</button>
 
                     </div>
